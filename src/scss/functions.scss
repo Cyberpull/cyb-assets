@@ -1,0 +1,13 @@
+@function cyb-device($key: lg) {
+  @if (map-has-key($device, $key)) {
+    @return map-get($device, $key);
+  }
+  @return map-get($device, lg);
+}
+
+@function cyb-color($key: default) {
+  @if (map-has-key($color, $key)) {
+    @return map-get($color, $key);
+  }
+  @return map-get($color, default);
+}

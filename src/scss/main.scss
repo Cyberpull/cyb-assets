@@ -1,0 +1,15 @@
+
+html,body {
+  margin: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.cyb {
+  @include misc-styles;
+  &-sm { @include misc-styles-device(sm); }
+  &-md { @include misc-styles-device(md); }
+  &-lg { @include misc-styles-device(lg); }
+}
